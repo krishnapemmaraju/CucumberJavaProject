@@ -56,6 +56,19 @@
 
 public class TestRunner{
  }
+ 
+ Cucumber Hooks: 
+ 
+ Global Hooks
+  @Before
+  @After
+  
+ @First
+ @Before("@First") // local for First Scenario
+ @After("@First") // local after first scenario
+ 
+ @Before(order=1)
+ @After(order=1) 
    
    
    

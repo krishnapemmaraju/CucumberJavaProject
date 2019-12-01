@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.089443">
-<testcase classname="Automation Test Website" name="Login with Valid UserName and Password" time="0.089415">
-<system-out><![CDATA[Given This is a valid Login.................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.14055">
+<testcase classname="Hooks Feature in Cucumber" name="Hooks Feature in Cucumber" time="0.139744">
+<system-out><![CDATA[Given User is on LoginPage..................................................passed
+When User Enters valid userName and Password and click SingIN...............passed
+Then User Should be on MyAccountPage........................................passed
+Then Click on MyPersonalInformation button..................................passed
+Then User should be on "test1" , "test2" MyPersonal Information Page........passed
 ]]></system-out>
 </testcase>
-<testcase classname="Automation Test Website" name="Update the Customer EmailAdrress" time="0.000028">
-<system-out><![CDATA[Given This is a MyAccount Customer EmailAddress Update......................passed
+<testcase classname="Hooks Feature in Cucumber" name="Hooks Feature in Cucumber 2" time="0.000806">
+<system-out><![CDATA[Given User is on LoginPage..................................................passed
+When User Enters valid userName and Password and click SingIN...............passed
+Then User Should be on MyAccountPage........................................passed
+Then Click on MyPersonalInformation button..................................passed
+Then User should be on "test3" , "test4" MyPersonal Information Page........passed
 ]]></system-out>
 </testcase>
 </testsuite>

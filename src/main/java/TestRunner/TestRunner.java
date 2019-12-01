@@ -8,7 +8,7 @@ import cucumber.api.junit.*;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "C:\\Users\\kpemmaraju\\eclipse-workspace\\SampleCucumberBDDProject\\src\\main\\java\\Feature\\cucumberTags.feature",
+		features = "C:\\Users\\kpemmaraju\\eclipse-workspace\\SampleCucumberBDDProject\\src\\main\\java\\Feature\\hooksFeatureExample.feature",
 		glue={"stepDefinitions"}, //path of STep Definitions
 		format= {"pretty","html:test-output","json:json-output/cucumber.json","junit:junit-output/cucumber.xml"}, //,"json:json-output/cucumber.json or "junit:junit_xml/cucumber.xml - To generate different types of reporting
 		monochrome = true, //display the console output in a proper readable format

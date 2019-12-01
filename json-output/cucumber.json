@@ -3,70 +3,222 @@
     "line": 1,
     "elements": [
       {
-        "line": 4,
-        "name": "Login with Valid UserName and Password",
+        "before": [
+          {
+            "result": {
+              "duration": 219100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinitionExample.Setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Hooks Feature in Cucumber",
         "description": "",
-        "id": "automation-test-website;login-with-valid-username-and-password",
+        "id": "hooks-feature-in-cucumber;hooks-feature-in-cucumber;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 125900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinitionExample.teardown()"
+            }
+          }
+        ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 89415200,
+              "duration": 135630700,
               "status": "passed"
             },
             "line": 5,
-            "name": "This is a valid Login",
+            "name": "User is on LoginPage",
             "match": {
-              "location": "CucumberTagStepDefinition.this_is_a_valid_Login()"
+              "location": "HooksStepDefinitionExample.user_is_on_LoginPage()"
             },
             "keyword": "Given "
-          }
-        ],
-        "tags": [
-          {
-            "line": 3,
-            "name": "@SmokeTest"
           },
           {
-            "line": 3,
-            "name": "@RegressionTest"
+            "result": {
+              "duration": 103100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Enters valid userName and Password and click SingIN",
+            "match": {
+              "location": "HooksStepDefinitionExample.user_Enters_valid_userName_and_Password_and_click_SingIN()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User Should be on MyAccountPage",
+            "match": {
+              "location": "HooksStepDefinitionExample.user_Should_be_on_MyAccountPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 78200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on MyPersonalInformation button",
+            "match": {
+              "location": "HooksStepDefinitionExample.click_on_MyPersonalInformation_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3512800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be on \"test1\" , \"test2\" MyPersonal Information Page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test1",
+                  "offset": 19
+                },
+                {
+                  "val": "test2",
+                  "offset": 29
+                }
+              ],
+              "location": "HooksStepDefinitionExample.user_should_be_on_MyPersonal_Information_Page(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
           }
         ]
       },
       {
-        "line": 20,
-        "name": "Update the Customer EmailAdrress",
+        "before": [
+          {
+            "result": {
+              "duration": 294000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinitionExample.Setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Hooks Feature in Cucumber",
         "description": "",
-        "id": "automation-test-website;update-the-customer-emailadrress",
+        "id": "hooks-feature-in-cucumber;hooks-feature-in-cucumber;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 56700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinitionExample.teardown()"
+            }
+          }
+        ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 28000,
+              "duration": 87100,
               "status": "passed"
             },
-            "line": 21,
-            "name": "This is a MyAccount Customer EmailAddress Update",
+            "line": 5,
+            "name": "User is on LoginPage",
             "match": {
-              "location": "CucumberTagStepDefinition.this_is_a_MyAccount_Customer_EmailAddress_Update()"
+              "location": "HooksStepDefinitionExample.user_is_on_LoginPage()"
             },
             "keyword": "Given "
-          }
-        ],
-        "tags": [
+          },
           {
-            "line": 19,
-            "name": "@SmokeTest"
+            "result": {
+              "duration": 80200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Enters valid userName and Password and click SingIN",
+            "match": {
+              "location": "HooksStepDefinitionExample.user_Enters_valid_userName_and_Password_and_click_SingIN()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 72200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User Should be on MyAccountPage",
+            "match": {
+              "location": "HooksStepDefinitionExample.user_Should_be_on_MyAccountPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 78800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on MyPersonalInformation button",
+            "match": {
+              "location": "HooksStepDefinitionExample.click_on_MyPersonalInformation_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 136600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be on \"test3\" , \"test4\" MyPersonal Information Page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test3",
+                  "offset": 19
+                },
+                {
+                  "val": "test4",
+                  "offset": 29
+                }
+              ],
+              "location": "HooksStepDefinitionExample.user_should_be_on_MyPersonal_Information_Page(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Automation Test Website",
+    "name": "Hooks Feature in Cucumber",
     "description": "",
-    "id": "automation-test-website",
+    "id": "hooks-feature-in-cucumber",
     "keyword": "Feature",
-    "uri": "C:/Users/kpemmaraju/eclipse-workspace/SampleCucumberBDDProject/src/main/java/Feature/cucumberTags.feature"
+    "uri": "C:/Users/kpemmaraju/eclipse-workspace/SampleCucumberBDDProject/src/main/java/Feature/hooksFeatureExample.feature"
   }
 ]
