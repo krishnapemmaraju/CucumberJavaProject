@@ -1,135 +1,65 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/kpemmaraju/eclipse-workspace/SampleCucumberBDDProject/src/main/java/Feature/SaveAddressMyAccount.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/kpemmaraju/eclipse-workspace/SampleCucumberBDDProject/src/main/java/Feature/cucumberTags.feature");
 formatter.feature({
   "line": 1,
-  "name": "Save Address to My Account",
+  "name": "Automation Test Website",
   "description": "",
-  "id": "save-address-to-my-account",
+  "id": "automation-test-website",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 3,
-  "name": "Save Address for Customer",
+  "line": 4,
+  "name": "Login with Valid UserName and Password",
   "description": "",
-  "id": "save-address-to-my-account;save-address-for-customer",
+  "id": "automation-test-website;login-with-valid-username-and-password",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@SmokeTest"
+    },
+    {
+      "line": 3,
+      "name": "@RegressionTest"
+    }
+  ]
 });
 formatter.step({
   "line": 5,
-  "name": "User is on SignIn Page",
+  "name": "This is a valid Login",
   "keyword": "Given "
 });
-formatter.step({
-  "line": 6,
-  "name": "User enters username and password and click on Sign IN",
-  "rows": [
+formatter.match({
+  "location": "CucumberTagStepDefinition.this_is_a_valid_Login()"
+});
+formatter.result({
+  "duration": 89415200,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 20,
+  "name": "Update the Customer EmailAdrress",
+  "description": "",
+  "id": "automation-test-website;update-the-customer-emailadrress",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
     {
-      "cells": [
-        "kk300@gmail.com",
-        "krish16"
-      ],
-      "line": 7
+      "line": 19,
+      "name": "@SmokeTest"
     }
-  ],
-  "keyword": "Then "
+  ]
 });
 formatter.step({
-  "line": 8,
-  "name": "User is on MyAccountPage",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "User Click on My Address button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User Clicks on Add a New Address button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "User enters CustomerAddress and click on Save",
-  "rows": [
-    {
-      "cells": [
-        "TestAddress6",
-        "Manchester",
-        "4",
-        "87656",
-        "09897889",
-        "MyAddress6"
-      ],
-      "line": 12
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "Validate the New Address by capturing Header",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 14,
-  "name": "Close the Browser",
-  "keyword": "Then "
+  "line": 21,
+  "name": "This is a MyAccount Customer EmailAddress Update",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "myAccountCustAddrStepDefnition.UserOnSignInPage()"
+  "location": "CucumberTagStepDefinition.this_is_a_MyAccount_Customer_EmailAddress_Update()"
 });
 formatter.result({
-  "duration": 13740658700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "myAccountCustAddrStepDefnition.UserLoginOnPage(DataTable)"
-});
-formatter.result({
-  "duration": 1631870000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "myAccountCustAddrStepDefnition.UserOnMyAccPage()"
-});
-formatter.result({
-  "duration": 15274000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "myAccountCustAddrStepDefnition.UserClicksOnMyAddressButton()"
-});
-formatter.result({
-  "duration": 793938100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "myAccountCustAddrStepDefnition.UserAddNewAddrButton()"
-});
-formatter.result({
-  "duration": 848945200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "myAccountCustAddrStepDefnition.UserAddNewAddrData(DataTable)"
-});
-formatter.result({
-  "duration": 1909594200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "myAccountCustAddrStepDefnition.captureNewAddrAlias()"
-});
-formatter.result({
-  "duration": 33200400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "myAccountCustAddrStepDefnition.teardown()"
-});
-formatter.result({
-  "duration": 717555900,
+  "duration": 28000,
   "status": "passed"
 });
 });

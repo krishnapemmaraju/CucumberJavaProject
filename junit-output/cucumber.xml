@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="19.691036">
-<testcase classname="Save Address to My Account" name="Save Address for Customer" time="19.691036">
-<system-out><![CDATA[Given User is on SignIn Page................................................passed
-Then User enters username and password and click on Sign IN.................passed
-Then User is on MyAccountPage...............................................passed
-Then User Click on My Address button........................................passed
-Then User Clicks on Add a New Address button................................passed
-Then User enters CustomerAddress and click on Save..........................passed
-Then Validate the New Address by capturing Header...........................passed
-Then Close the Browser......................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.089443">
+<testcase classname="Automation Test Website" name="Login with Valid UserName and Password" time="0.089415">
+<system-out><![CDATA[Given This is a valid Login.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automation Test Website" name="Update the Customer EmailAdrress" time="0.000028">
+<system-out><![CDATA[Given This is a MyAccount Customer EmailAddress Update......................passed
 ]]></system-out>
 </testcase>
 </testsuite>
