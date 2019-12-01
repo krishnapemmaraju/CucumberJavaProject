@@ -1,0 +1,61 @@
+ 
+ 
+   BDD - Behaviour Driven Development - Frame work 
+   
+   Gherkin is a approach which will use for the BDD 
+   
+   Jbehave - another tool like Cucumber - available only in Java
+   
+   Cucumber - Java  - JVM 
+       available in the form of JVM 
+    
+   Cucumber contains 3 components
+   
+   Feature - feature file with extension as .feature , we will use Gherkin keywords [ Given , When , THen , and , But , as , * , or ] to define a scenario or outline
+  
+   Step Definition - we write Selenium code + Java code + different annotations  
+   
+   Test Runner - We will use Junit - to execute to run the feature , also generate output/report
+   
+   Cucumber Options : 
+   dryFiles
+   Features
+   Glue
+   Tags
+   monochrome
+   format
+   strict
+   
+   All the Cucumber options will be defined in Test Runner Class
+   
+   dryRun - It will check whether we misses any step definition , it will not actually run the test cases. 
+   It will be helpfull when we have more number of steps
+   
+   Glue - Path of Step Definition 
+   
+   
+   Data Driven Testing in Cucumber 
+   1. Simple Data Drivern - Example Keyword
+   2. With Examples + Scenario Outline
+   3. Using tables
+   
+   Features - Path of the feature file 
+   
+   monchrome - printing the output in readable format
+   
+   @RunWith(Cucumber.class)
+@CucumberOptions(
+        features = "Path of the Feature File",
+        glue = "Path of the STepDefinition", 
+        format = {"pretty , html:test-output","json:json-output/cucmber.json","junit:junit-output/cucumber.xml"},
+        monochrome= true, // display the content in proper format
+        strict=false, // provide information about missing steps but executes the other steps
+        dryRun = false, // provide information on missing steps
+        tags={"@SmokeTest","@RegressionTest"} // for implementing the tag functionality
+     );
+
+public class TestRunner{
+ }
+   
+   
+   
